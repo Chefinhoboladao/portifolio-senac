@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métodos básicos</title>
+  <link rel="stylesheet" href="../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../index.html">&larr; Voltar ao menu</a>
+    <h1>Métodos básicos</h1>
+    <p>push, unshift, pop, shift, forEach.</p>
+    <p class="dica">Abra o console do navegador (F12) para ver o resultado. Recarregue a página para executar de novo.</p>
+  </main>
+  <script>
+    const cidades = ["Ribeirão Preto"];    // declara e define o valor incial da array
+
+    cidades.push("Serrana");               // adiciona cidade ao final do vetor
+    console.log(cidades);                  //["Ribeirão Preto , Serrana"]
+    
+    cidades.unshift("Sertãozinho");        // adiciona ao inicio e desloca as demais 
+    console.log(cidades);                  // ["Sertãozinho, Ribeirão Preto, Serrana"]
+
+    console.table(cidades)                 // mostra array na forma de tabela
+
+    console.log(cidades.toString());       // separa por virgula
+    console.log(cidades.join(" - "));      // separa pelo o que voce colocar
+
+    const ultima = cidades.pop();          // remove a ultima cidade do vetor sem perde-la
+    console.log(cidades);                  // ["Sertãozinho", "Ribeirão Preto"]
+
+    const primeira = cidades.shift();      // remove o primeiro elemento sem perde-lo
+    console.log(cidades);                  // ["Ribeirão Preto"]
+
+    console.log(ultima);
+    console.log(primeira);
+
+    for (const cidade of cidades) {        
+        console.log(cidade)
+    }
+
+    cidades.forEach((cidade, i) => {
+        console.log(`${i+1}ª Cidade: ${cidade}`);
+        
+    })
+
+    const numeros = [5, 10, 15, 20]
+    let soma = 0 
+    numeros.forEach(num => soma += num)
+    console.log(`Soma dos Números: ${soma}`)
+  </script>
+</body>
+</html>

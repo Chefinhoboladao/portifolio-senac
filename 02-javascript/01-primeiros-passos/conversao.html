@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversão de tipos</title>
+  <link rel="stylesheet" href="../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../index.html">&larr; Voltar ao menu</a>
+    <h1>Conversão de tipos</h1>
+    <p>Texto em número.</p>
+    <p class="dica">Abra o console do navegador (F12) para ver o resultado. Recarregue a página para executar de novo.</p>
+  </main>
+  <script>
+   const a = "20"
+   console.log(`valor de a é ${a}`);
+  
+   const b = a * 2;     // 40
+   console.log(`valor de b é ${b}`);
+   
+   const c = a / 2;     // 10
+   console.log(`valor de c é ${c}`);
+
+   const d = a - 2;     // 18
+   console.log(`valor de d é ${d}`);
+
+   //const  e = a + 2;    //22
+   const e = Number(a) + 2
+   console.log(`valor de e é ${e}`);
+
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/*Exemplo de caixa estilizada*/
+.minha-caixa {
+    /*Dimensões*/
+    width: 300px;
+    min-height: 150px;
+
+    background-color: lightgoldenrodyellow;
+    color: rgb(167, 0, 153);
+
+    /* Padding (Espaço interno) */
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+
+    /* padding: 20px 15px;*/
+
+    /* BORDER (Borda: Espessura | Estilo | Cor) */
+    border: 30px solid rgb(180, 0, 180);
+
+    /* Margin (Espaço Externo) */
+    margin: 30px; 
+
+    border-radius: 15px;
+
+
+
+}
+
+.butao {
+
+    padding: 20px;
+background: #fff;
+color: #000;
+border: 1px solid #000;
+cursor: pointer;
+transition: 0.3s all ease-in-out;
+background: #000;
+color: #fff;
+
+}
+
+/* caixa dentro de caixa usa só o espaço disponível */
+.minha-caixa .minha-caixa {
+    width: auto;
+}

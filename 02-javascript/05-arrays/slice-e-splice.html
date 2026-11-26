@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slice e splice</title>
+  <link rel="stylesheet" href="../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../index.html">&larr; Voltar ao menu</a>
+    <h1>slice e splice</h1>
+    <p>Copiar e remover trechos.</p>
+    <p class="dica">Abra o console do navegador (F12) para ver o resultado. Recarregue a página para executar de novo.</p>
+  </main>
+  <script>
+ 
+    const letras = ["A", "B", "C", "D"];            // declara e define conteudo incial do array
+    const letras2 = letras.slice(-2);                 // obtém as duas ultimas letras
+    const letras3 = letras.slice(0, -1);                // obtem do incio ate o final, exceto a ultima
+    console.log(letras);                                   // ["A", "B", "C", "D"]
+    console.log(letras2);                                     // ["C", "D"]
+    console.log(letras3);                                        // ["A", "B", "C"]
+
+    console.table(letras) 
+
+    const retira = letras.splice(2, 1);                     // remove a partir da posição 2, 1 elemento
+    console.log(letras);                                    // ['A', 'B', 'D']
+    console.log(retira);                                    // ['C']  
+
+    
+  </script>
+</body>
+</html>

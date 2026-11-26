@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peso ideal</title>
+  <link rel="stylesheet" href="../../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../../index.html">&larr; Voltar ao menu</a>
+    <h1>Peso ideal</h1>
+    <p>Estimativa a partir da altura em metros (22 ou 21 x altura²).</p>
+    <form>
+      <p>Nome: <input type="text" id="inNome" required></p>
+      <p>Sexo:
+        <label><input type="radio" name="Sexo" id="inMasculino" required> Masculino</label>
+        <label><input type="radio" name="Sexo" id="inFeminino" required> Feminino</label>
+      </p>
+      <p>Altura (m): <input type="number" id="inAltura" step="0.01" min="0" required></p>
+      <p><input type="submit" value="Calcular"> <input type="reset" value="Limpar dados"></p>
+    </form>
+    <h3></h3>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

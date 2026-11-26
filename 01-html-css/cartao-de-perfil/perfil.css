@@ -1,0 +1,49 @@
+/* Reset básico*/
+* {
+    box-sizing: border-box;  /* Mantém o tamanho das caixas sob controle */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem /* Usa unidade relativa rem*/
+}
+
+/*Estilizando cartão (caixa principal)*/
+
+.card {
+    width: 100%;  /* Em telas pequenas ocupa tudo*/
+    max-width: 350px;  /* Mas não passa de 350px */
+    background-color: #ffffffff;
+    color: #333333;
+
+    /* Box Model */
+    padding: 20px;
+    border: 2px solid #007bff;
+    margin: 40px auto; /* 40px top/botton, auto centraliza */
+    border-radius: 10px;
+    text-align: Center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);    
+}
+
+.card h2 {
+    margin-bottom: 10px;  /* Margem apenas abaixo do titulo */
+    color: #007bff;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none; /* Remove a borda padrão do botão */
+    padding: 10px 20px; /* 10px cima/baixo 20px lados */
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}

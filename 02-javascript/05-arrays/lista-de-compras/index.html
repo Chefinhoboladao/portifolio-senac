@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de compras</title>
+  <link rel="stylesheet" href="../../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../../index.html">&larr; Voltar ao menu</a>
+    <h1>Lista de compras</h1>
+    <p>Adiciona e remove itens no início e no final.</p>
+    <form>
+      <p>Produto: <input type="text" id="inProduto" required autofocus></p>
+      <p>
+        <input type="button" value="Adicionar no início" id="btInicio">
+        <input type="submit" value="Adicionar no final">
+        <input type="button" value="Remover primeiro" id="btRemoverInicio">
+        <input type="button" value="Remover último" id="btRemoverFinal">
+      </p>
+    </form>
+    <pre></pre>
+    <h3 id="qtde"></h3>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

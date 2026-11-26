@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filter, map e reduce</title>
+  <link rel="stylesheet" href="../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../index.html">&larr; Voltar ao menu</a>
+    <h1>filter, map e reduce</h1>
+    <p>Pesquisa e soma em listas.</p>
+    <p class="dica">Abra o console do navegador (F12) para ver o resultado. Recarregue a página para executar de novo.</p>
+  </main>
+  <script>
+    // const idades = [12, 20, 15, 17, 14];
+    // let maiores = false;           // flag de controle
+    // for (const idade of idades) {
+    //     if (idade >= 18) {
+    //         console.log(idade);
+    //         maiores = true;
+    //     } 
+    // }
+    
+    // if (!maiores) {
+    //     console.log("Não há idades maiores que 18 na lista");
+    // }
+
+    // const numeros = [10, 13, 20, 8, 15];         // inicio da array
+    // const dobros = numeros.map(num => num * 2);  // cada numero é obtido 
+    // console.log(dobros.join(", "));              // 20, 26, 40, 16, 30 
+
+    // const amigos = [{nome: "Ana", idade: 20},
+    //                {nome: "Bruno", idade: 17},
+    //                {nome: "Cátia", idade: 25}];
+
+    // const amigos2 = amigos.map(aux => ({nome: aux.nome, nasc: 2026 - aux.idade}));
+
+    // for (const amigo of amigos2) {
+    //     console.log(`${amigo.nome} - Nasceu em: ${amigo.nasc}`);
+    // }
+
+    // const numeros = [10, 13, 20, 8, 15];                  // vetor inicial
+    // const pares = numeros.filter(num => num % 2 == 0);    // condição para o filtro 
+    // console.log(pares.join(', '));                        // 10, 20, 8,
+
+
+    const amigos = [{nome: "Ana", idade: 20},
+            {nome: "Bruno", idade: 17},
+            {nome: "Cátia", idade: 25}];
+
+    const amigos2 = amigos.filter(aux => aux.idade >= 21 || aux.nome.includes("B"));
+
+    for (const amigo of amigos2) {
+        console.log(`${amigo.nome} - idade: ${amigo.idade} anos`);
+    }
+
+    if (amigos2.length == 0) {
+        console.log("Não há amigos com essas condições...");
+    }
+
+    const numeros = [10, 13, 20, 8, 15];
+    // const soma = numeros.reduce((acumulador, num) => acumulador + num, 0);
+    // console.log(`Soma: ${soma}`);      // Soma 66
+
+    const soma = amigos.reduce((acumulador, amigos) => acumulador + amigos.idade, 0);
+    const todos = amigos.reduce((acumulador, amigo) => acumulador + amigo.nome + ", ", "");
+    
+    console.log(`Soma: ${soma}`);
+    console.log(`Todos: ${todos} `);    
+
+    const maior = numeros.reduce((a, b) => Math.max(a, b), 0);
+    console.log(`Maior: ${maior}`);          // maior:
+
+    
+  </script>
+</body>
+</html>

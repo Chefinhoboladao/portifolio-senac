@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laço do...while</title>
+  <link rel="stylesheet" href="../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../index.html">&larr; Voltar ao menu</a>
+    <h1>Laço do...while</h1>
+    <p>Repete até receber um número e lista os pares.</p>
+    <p class="dica">Recarregue a página para executar de novo.</p>
+  </main>
+  <script>
+    let num; //declara variavel num com let, pois ela pode ser alterada
+
+    do{
+        num = Number(prompt("Número: "));
+        if (num == 0  || isNaN(num)){
+    alert ("Digite um número válido...");
+
+    }
+
+    } while (num == 0  ||  isNaN(num));
+    let pares = `Pares entre 1 e ${num}: `;
+
+    for (let i = 2; i <= num; i += 2) {
+        pares = pares + i + ", ";
+    }
+    alert(pares)
+  </script>
+</body>
+</html>

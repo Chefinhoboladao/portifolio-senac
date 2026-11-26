@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>break e continue</title>
+  <link rel="stylesheet" href="../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../index.html">&larr; Voltar ao menu</a>
+    <h1>break e continue</h1>
+    <p>Dobro para pares e triplo para ímpares; 0 para sair.</p>
+    <p class="dica">Recarregue a página para executar de novo.</p>
+  </main>
+  <script>
+    alert("Digite 0 para sair");
+
+    do {
+        const num = Number(prompt("Número: "));         // lê Número
+
+        if (num == 0 || isNaN(num)) {                   // se número = 0 ou invalido
+            const sair = confirm("Confirma Saída? ");   // solicita confirmação
+     
+            if (sair) {
+                break;                                  // sai da repetição
+            }   else {
+                continue;
+            }
+        }
+    
+        if (num % 2 ==0) {                              // se for par
+            alert(`O dobro de ${num} é: ${num * 2}`);   // mostra o dobro
+        } else {                                        // senão
+            alert(`O triplo de ${num} é: ${num * 3}`);   // mostra o triplo 
+        }
+
+    } while (true);                                     // enquanto for verdadeiro (só sai do laço pelo break);
+
+    alert("TCHAU");
+  </script>
+</body>
+</html>

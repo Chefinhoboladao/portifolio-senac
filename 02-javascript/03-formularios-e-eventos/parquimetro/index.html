@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parquímetro</title>
+  <link rel="stylesheet" href="../../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../../index.html">&larr; Voltar ao menu</a>
+    <h1>Parquímetro</h1>
+    <p>R$ 1,00 = 30 min, R$ 1,75 = 60 min, R$ 3,00 = 120 min.</p>
+    <form>
+      <p>Valor: R$ <input type="number" id="inValor" step="0.01" min="0" required></p>
+      <p><input type="submit" value="Confirmar depósito"></p>
+    </form>
+    <h3 id="outTempo"></h3>
+    <h3 id="outTroco"></h3>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

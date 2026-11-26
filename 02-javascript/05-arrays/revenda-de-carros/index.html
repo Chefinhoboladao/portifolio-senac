@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revenda de carros</title>
+  <link rel="stylesheet" href="../../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../../index.html">&larr; Voltar ao menu</a>
+    <h1>Revenda de carros</h1>
+    <p>Cadastro, filtro por preço e simulação de promoção.</p>
+    <form>
+      <p>Modelo: <input type="text" id="inModelo" required autofocus></p>
+      <p>Preço: R$ <input type="number" id="inPreco" step="0.01" min="0" required></p>
+      <p><input type="submit" value="Adicionar"></p>
+      <p>
+        <input type="button" value="Listar todos" id="btListar">
+        <input type="button" value="Filtrar por preço" id="btFiltrar">
+        <input type="button" value="Simular promoção" id="btSimular">
+      </p>
+    </form>
+    <pre></pre>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

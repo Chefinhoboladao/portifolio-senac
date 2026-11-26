@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 24px;
+  background: #f1f4f8;
+  color: #1f2933;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 28px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+h1 { font-size: 1.5rem; border-bottom: 3px solid #0d6efd; padding-bottom: 8px; }
+input, button { font: inherit; padding: 8px 10px; margin: 2px 0; border: 1px solid #b8c2cc; border-radius: 6px; }
+input[type="submit"], input[type="button"], input[type="reset"], button { background: #0d6efd; border-color: #0d6efd; color: #fff; cursor: pointer; }
+pre { font-size: 1.05rem; white-space: pre-wrap; }
+.voltar { font-size: 0.85rem; color: #0d6efd; }
+.dica { font-size: 0.85rem; color: #52606d; }
+.fonteAzul { color: #0d6efd; }

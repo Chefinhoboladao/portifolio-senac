@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C - Taxa do garçom</title>
+  <link rel="stylesheet" href="../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../index.html">&larr; Voltar ao menu</a>
+    <h1>C - Taxa do garçom</h1>
+    <p>Valor do jantar com taxa de 10%.</p>
+    <p class="dica">Recarregue a página para executar de novo.</p>
+  </main>
+  <script>
+const prato1 = Number(prompt("Valor do prato 1"));
+const prato2 = Number(prompt("Valor do prato 2"));
+
+
+const resultado = prato1 + prato2
+const taxa = resultado /  10;
+const precofinal = taxa + resultado
+
+alert ("Preço " + resultado.toFixed(2))
+alert ("Taxa " + taxa.toFixed(2))
+alert ("Preço final " + precofinal.toFixed(2))
+  </script>
+</body>
+</html>

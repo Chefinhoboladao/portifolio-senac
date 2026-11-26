@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contas do mês</title>
+  <link rel="stylesheet" href="../../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../../index.html">&larr; Voltar ao menu</a>
+    <h1>Contas do mês</h1>
+    <p>Contador e acumulador.</p>
+    <form>
+      <p>Descrição: <input type="text" id="inDescricao" required></p>
+      <p>Valor: R$ <input type="number" id="inValor" step="0.01" min="0" required></p>
+      <p><input type="submit" value="Registrar conta"></p>
+    </form>
+    <pre id="outResp1"></pre>
+    <pre id="outResp2"></pre>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

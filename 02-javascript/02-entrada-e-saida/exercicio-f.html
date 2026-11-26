@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F - Conta da pizzaria</title>
+  <link rel="stylesheet" href="../../assets/estilo.css">
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../../index.html">&larr; Voltar ao menu</a>
+    <h1>F - Conta da pizzaria</h1>
+    <p>Divide a conta entre os clientes.</p>
+    <p class="dica">Recarregue a página para executar de novo.</p>
+  </main>
+  <script>
+const valortotal = Number(prompt("conta"));
+const clientes = Number(prompt("quantidade de clientes"));
+
+alert("Valor por cliente: R$ " + (valortotal / clientes).toFixed(2))
+  </script>
+</body>
+</html>
